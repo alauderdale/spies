@@ -1,0 +1,65 @@
+%section.inverse-section.home-hero{:style=>"background-image:url(../images/home-hero-bg.png);"}
+	.container
+		.row
+			.col-xl-6.col-lg-8
+				%h4.medium-font.line-above.position-relative
+					Welcome
+				%h1.margin-bottom.medium-font
+					World Class Counsel When it Counts
+				%h3
+					Serving Denver, Boulder, Greeley, Colorado Springs, Fort Collins and all of Colorado.
+				%a.btn.btn-lg.btn-outline-light.double-margin-top{:href=>"#"}
+					Request a consultation
+%section.no-padding-bottom
+	.container
+		.row.justify-content-md-center
+			.col-lg-8
+				%h4.bold-font.text-center
+					How can we help?
+				%h2.text-center
+					We’re committed to fairly practicing the law. Our expertise extends to several areas, including:
+		.industry-cards
+			.row
+				.col-lg-12
+					.card-deck
+						-3.times do
+							.card.service-card.position-relative.double-padding-top
+								.card-icon
+									%img{:src=>"../images/card-icon-special.svg"}
+								.card-body
+									%h4.card-title.bold-font 
+										Special education law
+									%p.card-text.light-text-color
+										=lorem.words(10)
+								.card-footer
+									%a.card-link{:href => "#"} Learn more
+					.text-center.double-margin-top.double-padding-top
+						%a.btn.btn-lg.btn-dark{:href=>"#"}
+							View all practice areas
+
+%img.full-width{:src=>"../images/people-bg-top.svg"}
+%section.home-people.no-padding-top
+	.container
+		.row.justify-content-md-center.double-margin-bottom
+			.col-lg-8
+				%h4.bold-font.text-center
+					Our legal team
+				%h2.text-center
+					Aliquam vehicula dictum diam, at ornare sem condimentum ut.
+		.people-cards
+			.row
+				.col-lg-12
+					.card-columns
+						-6.times do
+							%a{:href=>"/styles"}
+								.card.person-card.position-relative
+									.card-body
+										%img.double-margin-bottom{:src=>"../images/people/jan-thumb.png", :width=>"173px"}
+										%h3.card-title.text-color
+											Janet R. Spies
+										%h5.card-subtitle.light-text-color
+											Partner
+										%i.material-icons{:onclick=>"document.location.href = 'mailto:john@doe.com'; return false"}
+											email
+										%h5.card-text.light-text-color
+											=lorem.words(18)

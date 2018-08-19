@@ -1,0 +1,81 @@
+.card{
+	background: #FFFFFF;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.10);
+	border:none;
+	.card-body{
+		padding:32px;
+	}
+	.card-link{
+		text-transform:uppercase;
+		letter-spacing:.5px;
+		font-size:.9rem;
+		font-weight:600;
+	}
+	.card-icon{
+		position:absolute;
+		top:-65px;
+		left: 0; 
+		right: 0; 
+		margin-left: auto; 
+		margin-right: auto; 
+		width: 100px;
+
+	}
+
+}
+
+
+.industry-cards{
+	@include breakpoint(md) {
+		text-align:center;
+	}
+	padding-top:116px;
+	@include breakpoint(md) {
+		padding-top:0px;
+	}
+	.card{
+		background:$off-white-dark-color;
+		border:none;
+		@include breakpoint(md) {
+			margin-top:100px;
+		}
+		@include breakpoint(sm) {
+			flex:1 100%;
+		}
+		
+	}
+	.card-footer{
+		border:none;
+		background:transparent;
+	}
+}
+
+.people-cards{
+	.card-columns{
+		@include breakpoint(md) {
+			@include column-count(2)
+		}
+		@include breakpoint(sm) {
+			@include column-count(1)
+		}
+	}
+	a{
+		.card{
+			margin:20px 0;
+			@include transition-duration(.2s);
+				@include breakpoint(sm) {
+					flex:1 100%!important;
+				}
+				&:hover{
+					box-shadow: 0 12px 23px 0 rgba(0,0,0,0.10);
+					.card-title{
+						color:$link-color;
+					}
+				}
+				
+			}
+			.email-link{
+				
+			}
+	}
+}
