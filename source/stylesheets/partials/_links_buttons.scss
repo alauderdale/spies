@@ -6,7 +6,13 @@ a{
 		}
 	&:hover{
 		color:tint($link-color,30%);
+		text-decoration:none;
 	}
+}
+
+.link-underline{
+	border-bottom:1px solid $primary-color;
+	padding-bottom:2px;
 }
 
 .btn{

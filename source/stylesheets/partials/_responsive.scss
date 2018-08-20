@@ -21,5 +21,7 @@
 
 
 @include breakpoint(sm) {
-
+  .no-padding-top-sm{
+    padding-top:0;
+  }
 }

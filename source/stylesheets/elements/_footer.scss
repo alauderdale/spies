@@ -1,20 +1,18 @@
 footer#primary-footer{
 	padding:$baseline*3 0 $baseline*2 0;
-	background:black;
-	.footer-logo{
-		text-align:right;
-	}
-	.copyright{
-		color:rgba(255,255,255,.5);
-		margin:18px 0;
-		h5{
-			text-transform:uppercase;
-		}
-	}
-	@include breakpoint(sm) {
-		text-align:center;
-		.footer-logo{
-			text-align:center;
+	background:#15101B;
+	ul.footer-list{
+		li{
+			font-size:12pt;
+			line-height:24px;
+			color:rgba(255,255,255,.5);
+			a{
+				@include transition-duration(.2s);
+				color:rgba(255,255,255,.5);
+				&:hover{
+					color:white;
+				}
+			}
 		}
 	}
 }

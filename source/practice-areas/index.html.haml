@@ -1,0 +1,28 @@
+%section.page-hero.page-hero-offset{:style=>"background-image:url(../images/practices-hero-bg.png);"}
+	.container
+		.row
+			.col-lg-9
+				.hero-text-container
+					%h1.margin-bottom.medium-font
+						Practice areas
+					%h3
+						Aliquam vehicula dictum diam, at ornare sem condimentum ut. Aenean blandit consectetur dui ut fermentum. Curabitur sodales orci eget odio tristique tempus. 
+%section.off-white-bg-color
+	.container
+		.practice-cards
+			.row
+				-9.times do
+					.col-lg-4.col-md-6
+						%a.display-block{:href=>"/styles"}
+							.card.practice-card.position-relative.card-grid-card.shadowed-card-link
+								.card-body
+									%h3.card-subtitle.light-text-color.margin-bottom
+										01
+									%h3.card-title.text-color
+										Commercial
+									%h5.card-text.light-text-color
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis blandit molestie ipsum eget placerat. Maecenas eget imperdiet quam
+									%button.btn.btn-lg.btn-outline-dark.btn-block.double-margin-top{:type=>"button"}
+										Learn more
+
+=partial("shared/promo")

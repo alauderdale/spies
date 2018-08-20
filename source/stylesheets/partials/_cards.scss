@@ -36,6 +36,7 @@
 	.card{
 		background:$off-white-dark-color;
 		border:none;
+		box-shadow:none;
 		@include breakpoint(md) {
 			margin-top:100px;
 		}
@@ -50,32 +51,34 @@
 	}
 }
 
-.people-cards{
-	.card-columns{
-		@include breakpoint(md) {
-			@include column-count(2)
-		}
-		@include breakpoint(sm) {
-			@include column-count(1)
+.card-grid-card{
+	margin-bottom:20px;
+}
+
+.shadowed-card-link{
+	@include transition-duration(.2s);
+	&:hover{
+		box-shadow: 0 12px 23px 0 rgba(0,0,0,0.10);
+		.card-title{
+			color:$link-color;
+			text-decoration:underline;
+			@include transition-duration(.2s);
 		}
 	}
+}
+
+.people-cards{
 	a{
+		display:block;
 		.card{
-			margin:20px 0;
-			@include transition-duration(.2s);
-				@include breakpoint(sm) {
-					flex:1 100%!important;
-				}
-				&:hover{
-					box-shadow: 0 12px 23px 0 rgba(0,0,0,0.10);
-					.card-title{
-						color:$link-color;
-					}
-				}
-				
+			min-height:450px;
+			@include breakpoint(sm) {
+				min-height:auto;
 			}
-			.email-link{
-				
+			i.mail-link{
+				color:$dark-text-color;
 			}
+				
+		}
 	}
 }

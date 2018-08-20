@@ -14,5 +14,8 @@
 
 
 .home-people{
-	background:$off-white-color;
+	background:$off-white-color url(../images/people-bg-bottom.svg) bottom center no-repeat;
+	background-size:cover;
 }
+
+
