@@ -1,0 +1,54 @@
+%section.blog-styles.no-padding-top
+	.container
+		.row.justify-content-lg-center
+			.col-lg-12
+				.row
+					.col-lg-12
+						%nav{"aria-label" => "breadcrumb"}
+							%ol.breadcrumb
+								%li.breadcrumb-item
+									%a{:href => "#"} 
+										Home
+								%li.breadcrumb-item
+									%a{:href => "#"} 
+										Team
+								%li.breadcrumb-item.active{"aria-current" => "page"}
+									Library
+
+				.row
+					.col-md-3.order-md-3
+						%img.max-width.margin-bottom{:src=>"../images/people/brendon.png"}
+						%a.btn.btn-block.btn-lg.btn-dark{:href=>"#"}
+							Email
+					.col-md-1.order-md-2
+					.col-md-8.order-md-1
+						%h1.bold-font
+							Brendan O. Powers
+						%h3.margin-bottom
+							Partner
+						%p
+							As with all of the principals of Spies, Powers & Robinson, Brendan Powers has devoted his career to matters involving civil litigation and business regulation. The balance of this practice has emphasized insurance defense matters and complex commercial disputes. Mr. Powers is rated “AV” by the Martindale-Hubbell® Law Directory, a rating reserved to those attorneys recognized by peers for preeminent legal ability and adherence to the highest ethical standards. Mr. Powers has served as lead counsel in state and federal trials involving insurance bad faith, arson, fraud, environmental hazards, personal injury and product liability.
+						-3.times do
+							%h4.bold-font
+								Education
+							%ul
+								%li
+									Admitted to all Colorado State Courts
+								%li
+									Admitted to U.S. District Court of Colorado
+								%li
+									Admitted to 10th Circuit Court of Appeals
+								%li
+									Admitted to all Alaska State Courts
+								%li
+									Admitted to the U.S. District Court of Alaska
+								%li
+									Admitted to the Ninth Circuit Court of Appeals
+								%li
+									Member, Colorado, Alaska, Denver Bar Associations
+								%li
+									Member, Colorado Defense Lawyers Association
+								%li
+									Member, Defense Research Institute
+					
+=partial("shared/promo")
