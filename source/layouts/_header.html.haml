@@ -1,5 +1,7 @@
 .mobile-menu.d-lg-none
   .navbar-nav.mx-auto
+    %a.btn.btn-outline-light.btn-lg.double-margin-bottom{:href => "/contact"}
+      Request a consultation
     .nav-item
       %a.nav-link{:href => "/practice-areas"}
         Practice areas
@@ -15,11 +17,8 @@
     .nav-item
       %a.nav-link{:href => "/contact"}
         News
-
-    %a.btn.btn-outline-light.btn-lg{:href => "/contact"}
-      Request a consultation
-    %p.text-center.white-text-color.double-margin-top
-      Call us 333.333.3333
+    %p.text-center.white-text-color.call-us
+      (303)-123-4567
 %nav.navbar.fixed-top.navbar-expand-sm#primary-nav
   .container
     %a.navbar-brand{:href => "/"}
