@@ -82,6 +82,10 @@ html{
     visibility:hidden;
     padding-top:120px;
     .navbar-nav{
+    	.btn{
+    		width:200px;
+    		margin:0 auto;
+    	}
     	.nav-item{
     		text-align:center;
     		font-family:$regular-font-name;

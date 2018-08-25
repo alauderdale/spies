@@ -1,4 +1,4 @@
-%section.blog-styles.no-padding-top
+%section.blog-styles.no-padding-top.padding-bottom
 	.container
 		.row.justify-content-lg-center
 			.col-lg-12
@@ -7,25 +7,36 @@
 						%nav{"aria-label" => "breadcrumb"}
 							%ol.breadcrumb
 								%li.breadcrumb-item
-									%a{:href => "#"} 
+									%a{:href => "/"} 
 										Home
 								%li.breadcrumb-item
-									%a{:href => "#"} 
-										Team
+									%a{:href => "/team"} 
+										Attourneys
 								%li.breadcrumb-item.active{"aria-current" => "page"}
 									Library
-
 				.row
-					.col-md-3.order-md-3
-						%img.max-width.margin-bottom{:src=>"../images/people/brendon.png"}
-						%a.btn.btn-block.btn-lg.btn-dark{:href=>"#"}
-							Email
-					.col-md-1.order-md-2
-					.col-md-8.order-md-1
+					.col-lg-8.col-md-12.order-md-1
 						%h1.bold-font
 							Brendan O. Powers
 						%h3.margin-bottom
 							Partner
+				.row
+					.col-lg-3.col-md-4.order-md-3
+						%img.max-width.margin-bottom{:src=>"../images/people/brendon.png", :width=>"257px"}
+						%a.btn.btn-block.btn-lg.btn-dark.margin-bottom{:href=>"#"}
+							%i.material-icons
+								email
+							Email
+						%p.no-margin-bottom
+							%span.bold-font
+								E
+							powers@sprlaw.net
+						%p
+							%span.bold-font
+								P
+							333.333.3333
+					.col-lg-1.col-md-1.order-md-2
+					.col-lg-8.order-md-1.col-md-7
 						%p
 							As with all of the principals of Spies, Powers & Robinson, Brendan Powers has devoted his career to matters involving civil litigation and business regulation. The balance of this practice has emphasized insurance defense matters and complex commercial disputes. Mr. Powers is rated “AV” by the Martindale-Hubbell® Law Directory, a rating reserved to those attorneys recognized by peers for preeminent legal ability and adherence to the highest ethical standards. Mr. Powers has served as lead counsel in state and federal trials involving insurance bad faith, arson, fraud, environmental hazards, personal injury and product liability.
 						-3.times do
@@ -50,5 +61,22 @@
 									Member, Colorado Defense Lawyers Association
 								%li
 									Member, Defense Research Institute
+%section.no-padding-top.padding-bottom
+	.container
+		.row
+			.col-lg-12
+				%h2
+					Areas of expertise
+%section.padding-top.off-white-bg-color
+	.container
+		.row
+			.col-lg-6
+				.row
+					-5.times do
+						.col-md-6
+							.sublink-nav
+								%a.nav-item{:href=>""}
+									Insurance
+			.col-lg-6
 					
 =partial("shared/promo")

@@ -19,6 +19,12 @@ a{
 	border-radius:$base-border-radius;
 	font-weight:600;
 	font-size:17px;
+	i{
+		font-size:17px;
+		position:relative;
+		top:3px;
+		margin-right:10px;
+	}
 	//primary buttons
 	&.btn-primary{
 		background:$link-color;

@@ -1,4 +1,4 @@
-.mobile-menu
+.mobile-menu.d-lg-none
   .navbar-nav.mx-auto
     .nav-item
       %a.nav-link{:href => "/practice-areas"}
@@ -13,8 +13,13 @@
       %a.nav-link{:href => "#section-portfolio-companies"}
         Resources
     .nav-item
-      %a.nav-link{:href => "#section-team"}
+      %a.nav-link{:href => "/contact"}
         News
+
+    %a.btn.btn-outline-light.btn-lg{:href => "#section-contact"}
+      Request a consultation
+    %p.text-center.white-text-color.double-margin-top
+      Call us 333.333.3333
 %nav.navbar.fixed-top.navbar-expand-sm#primary-nav
   .container
     %a.navbar-brand{:href => "/"}
@@ -50,7 +55,7 @@
           %span.bold-font
             303.830.7090
       .form-inline
-        %a.btn.btn-outline-primary.btn-lg.nav-link.contact-button{:href => "#section-contact"}
+        %a.btn.btn-outline-primary.btn-lg.nav-link.contact-button{:href => "/contact"}
           Request a consultation
 
 
