@@ -1,0 +1,33 @@
+%section.double-padding-top
+	.container
+		.row.double-margin-bottom
+			.col-lg-12
+				%h1.bold-font.text-center
+					Resources
+				%p.text-center
+					Study up with our collection of tools, insights, and inspiration.
+		.row
+			.col-md-12
+				.row
+					-10.times do
+						.col-lg-3.col-md-4
+							%a{:href => "/blog/show"} 
+								.card.double-margin-bottom.resource-card
+									%img.card-img-top{:alt => "Card image cap", :src => "../images/resource-header.png"}/
+									.card-body
+										.text-center
+											%h4.card-title.card-subtitle.mb-2.text-muted
+												Webinar
+											%p.card-text
+												=lorem.words(5)
+									.card-footer
+										%button.btn.btn-link.btn-block{:type=>"button"}
+											View the post
+										
+
+
+
+
+
+
+=partial("shared/promo")

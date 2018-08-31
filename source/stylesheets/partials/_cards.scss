@@ -24,6 +24,40 @@
 
 }
 
+.resource-card{
+	@include transition-duration(.2s);
+	min-height:350px;
+	.card-body{
+		padding:20px 10px;
+		h4{
+			font-size:16px;
+			letter-spacing:1px;
+			font-weight:600;
+		}
+		p{
+			font-weight:600;
+			font-size:18px;
+			line-height:26px;
+			color:$text-color!important;
+		}
+	}
+	.card-footer{
+		background:none;
+		border:none;
+	}
+	&:hover{
+			box-shadow: 0 12px 23px 0 rgba(0,0,0,0.10);
+		}
+}
+
+.service-card{
+	a.card-link{
+		border-bottom:1px solid $link-color;
+		font-size:15px;
+		padding-bottom:5px;
+	}
+}
+
 
 .industry-cards{
 	@include breakpoint(md) {
